@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  jira-pro:
+    container_name: jira-final
+    restart: always
+    image: jira_crack:latest
+    volumes:
+      - /home/services/jira_data/:/var/atlassian/jira-pos
+      - /home/services/jira_app/:/var/atlassian/application-data/jira
+    ports:
+      - '18009:8080'
+    environment:
+      - 'ATL_JDBC_URL=jdbc:postgresql://postgresql:5432/jiradb'
+      - 'ATL_JDBC_USER=admin'
+      - 'ATL_JDBC_PASSWORD=shoghi'
+      - 'SETENV_JVM_MINIMUM_MEMORY=2048m'
+      - 'SETENV_JVM_MAXIMUM_MEMORY=4096m'
+      #- 'ATL_TOMCAT_SECURE=true'
+      #- 'ATL_PROXY_PORT=443'
+      #- 'JIRA_PROXY_NAME=http://jira.medianaco.com'
+      #- 'JIRA_PROXY_PORT=443'
+      #- 'JIRA_PROXY_SCHEME=http'
+    networks:
+      - my_service
+
+networks:
+  my_service:
+    external: true
