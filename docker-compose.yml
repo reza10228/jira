@@ -18,7 +18,7 @@ services:
       - 'SETENV_JVM_MAXIMUM_MEMORY=4096m'
       #- 'ATL_TOMCAT_SECURE=true'
       #- 'ATL_PROXY_PORT=443'
-      #- 'JIRA_PROXY_NAME=http://jira.medianaco.com'
+      #- 'JIRA_PROXY_NAME=http://domain.site.ir'
       #- 'JIRA_PROXY_PORT=443'
       #- 'JIRA_PROXY_SCHEME=http'
     networks:
