@@ -1,6 +1,6 @@
 FROM atlassian/jira-software:latest
 USER root
-#ENV X_PROXY_NAME=jira.skyroom.online
+#ENV X_PROXY_NAME=domain.site.ir
 #ENV X_PROXY_PORT=443
 #ENV X_PROXY_SCHEME=https
 # Add proxy unpacking to container
