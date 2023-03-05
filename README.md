@@ -20,4 +20,4 @@ Crack Application jira
 Crack Plugin jira
 
 
-`java -jar atlassian-agent.jar -d -m MAIL_ADDRESS -n BAT -p API_KEY -o http://192.168.151.31/ -s SERVER_id`
+`java -jar atlassian-agent.jar -d -m MAIL_ADDRESS -n BAT -p API_KEY -o http://192.168.x.x/ -s SERVER_id`
