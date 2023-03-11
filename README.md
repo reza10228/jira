@@ -11,7 +11,7 @@ Run service Jira
 For generate license jira software & jira plugin
 Sample Code
 
-**MY SERVER_id = BQVP-BXHW-950P-FI0Q**
+**MY SERVER_id = MMMM-LLLL-XXXX-YYYY**
 
 Crack Application jira
 
